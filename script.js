@@ -22,10 +22,10 @@ function roll() {
     let dieTwoValue = Math.floor(Math.random() * 6);
     document
       .querySelector("#die-1")
-      .setAttribute("src", "/images/" + images[dieOneValue]);
+      .setAttribute("src", "./" + images[dieOneValue]);
     document
       .querySelector("#die-2")
-      .setAttribute("src", "/images/" + images[dieTwoValue]);
+      .setAttribute("src", "./" + images[dieTwoValue]);
     document.querySelector("#total").innerHTML =
       "Your roll is " + (dieOneValue + 1 + (dieTwoValue + 1));
   }, 1000);
