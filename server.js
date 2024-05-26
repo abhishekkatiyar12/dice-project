@@ -18,4 +18,4 @@ app.listen(5000,()=>{
 
 
 app.use(express.static('public'));
-app.use('/images', express.static('images')); 
+app.use('./images', express.static('images')); 
